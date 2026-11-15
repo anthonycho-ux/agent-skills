@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    width:1200px; height:675px;
+    background: radial-gradient(ellipse at 70% 20%, #1a1410 0%, #0d0b09 55%, #080706 100%);
+    font-family: 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    color:#e8e0d0;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    padding:48px 56px;
+  }
+  .kicker {
+    font-size:15px; letter-spacing:6px; color:#c9a227;
+    text-transform:uppercase; margin-bottom:10px;
+  }
+  h1 {
+    font-size:44px; font-weight:900; color:#f5edd8;
+    margin-bottom:6px; letter-spacing:-1px;
+  }
+  h1 span { color:#c9a227; }
+  .sub {
+    font-size:17px; color:#9a8f7a; margin-bottom:34px;
+  }
+  .flow {
+    display:flex; align-items:stretch; gap:0; width:100%;
+  }
+  .step {
+    flex:1; background:#14100c; border:1px solid #3a2f1d;
+    border-radius:14px; padding:22px 18px; position:relative;
+    display:flex; flex-direction:column; gap:10px;
+  }
+  .step .num {
+    font-size:34px; font-weight:900; color:#c9a227; line-height:1;
+  }
+  .step .label { font-size:19px; font-weight:800; color:#f5edd8; }
+  .step .desc { font-size:13.5px; color:#a89a80; line-height:1.55; }
+  .arrow {
+    display:flex; align-items:center; justify-content:center;
+    width:44px; color:#c9a227; font-size:26px; font-weight:900;
+  }
+  .tagline {
+    margin-top:30px; font-size:21px; font-weight:800; color:#f5edd8;
+    border-top:1px solid #3a2f1d; padding-top:22px; width:100%;
+    text-align:center;
+  }
+  .tagline b { color:#c9a227; }
+</style>
+</head>
+<body>
+  <div class="kicker">Agent Skill · Deal Verification</div>
+  <h1>deal-scan <span>— 값을 깎아라</span></h1>
+  <div class="sub">AI 에이전트가 벤치마크 가격을 검증하는 4단계 절차</div>
+
+  <div class="flow">
+    <div class="step">
+      <div class="num">01</div>
+      <div class="label">핀을 박아라</div>
+      <div class="desc">브랜드·모델·규격·옵션까지 정확히 특정.<br>"비슷한" 제품은 없다. 다르면 다른 상품이다.</div>
+    </div>
+    <div class="arrow">→</div>
+    <div class="step">
+      <div class="num">02</div>
+      <div class="label">전부 뒤져라</div>
+      <div class="desc">동네 매장 + 온라인 몰 + 마켓플레이스를<br>병렬로 스캔. 한 곳만 보는 놈은 호구다.</div>
+    </div>
+    <div class="arrow">→</div>
+    <div class="step">
+      <div class="num">03</div>
+      <div class="label">코드로 검증해라</div>
+      <div class="desc">배송비·세금·설치비·쿠폰 조건까지 합산.<br>"세일"이라는 말만 믿지 마라.</div>
+    </div>
+    <div class="arrow">→</div>
+    <div class="step">
+      <div class="num">04</div>
+      <div class="label">판정을 내려라</div>
+      <div class="desc">최저가가 아니면 사지 마라.<br>사더라도 근거를 대라. 감으로 사는 놈은 진다.</div>
+    </div>
+  </div>
+
+  <div class="tagline">가격표에 속지 마라. <b>벤치마크를 핀으로 박고, 전부 뒤진 다음, 코드로 판정해라.</b></div>
+</body>
+</html>
